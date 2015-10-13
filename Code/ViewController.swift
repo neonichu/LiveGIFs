@@ -6,6 +6,7 @@
 //  Copyright © 2015 Boris Bügling. All rights reserved.
 //
 
+import MRProgress
 import Photos
 import UIKit
 
@@ -19,6 +20,7 @@ class ViewController: UICollectionViewController {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: size, height: size)
         super.init(collectionViewLayout: layout)
+        title = "LiveGIFs"
 
         collectionView?.backgroundColor = UIColor.whiteColor()
         collectionView?.registerClass(ImageCell.self, forCellWithReuseIdentifier:ViewController.cellId)
@@ -64,10 +66,19 @@ class ViewController: UICollectionViewController {
         return cell
     }
 
-    /*override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let livePhoto = livePhotos[indexPath.row]
-        
-    }*/
+
+        MRProgressOverlayView.showOverlayAddedTo(self.view, animated: true)
+        livePhoto.exportLivePhotoAsGIF() { (fileURL) in
+            dispatch_sync(dispatch_get_main_queue()) {
+                MRProgressOverlayView.dismissOverlayForView(self.view, animated: true)
+
+                let viewController = GIFViewController(fileURL: fileURL)
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
+    }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return livePhotos.count

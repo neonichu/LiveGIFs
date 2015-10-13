@@ -1,0 +1,73 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FLAnimatedImage (1.0.8)
+  - ImgurAnonymousAPIClient (0.3.2):
+    - AFNetworking (>= 2.3.1)
+  - Keys (1.0.0)
+  - MRProgress (0.8.2):
+    - MRProgress/ActivityIndicator (= 0.8.2)
+    - MRProgress/Blur (= 0.8.2)
+    - MRProgress/Circular (= 0.8.2)
+    - MRProgress/Icons (= 0.8.2)
+    - MRProgress/NavigationBarProgress (= 0.8.2)
+    - MRProgress/Overlay (= 0.8.2)
+  - MRProgress/ActivityIndicator (0.8.2):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.2):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.2):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.2)
+  - MRProgress/Icons (0.8.2)
+  - MRProgress/NavigationBarProgress (0.8.2):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.2):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.2)
+  - MRProgress/Stopable (0.8.2):
+    - MRProgress/Helper
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - ImgurAnonymousAPIClient
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - MRProgress
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  FLAnimatedImage: f9422f796135aff80d8c00b2afc48015bb746e24
+  ImgurAnonymousAPIClient: d1887ebe11b64a44ede12928b101d1f1c0099c2b
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
+  MRProgress: f4cfe862082418e8f542f077772283f425d6c699
+
+COCOAPODS: 0.39.0

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A8EE760D5134F3A7CA8EFAB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5C79F0F2577ED046F99811 /* Pods.framework */; };
+		A1E69B691BCDB5420063000C /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E69B681BCDB5420063000C /* GIFViewController.swift */; };
 		A1ED62CE1BCCF4F900289592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED62CD1BCCF4F900289592 /* AppDelegate.swift */; };
 		A1ED62D01BCCF4F900289592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ED62CF1BCCF4F900289592 /* ViewController.swift */; };
 		A1ED62D51BCCF4F900289592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1ED62D41BCCF4F900289592 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BC0627F4991C9F7B9D2105E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A1E69B681BCDB5420063000C /* GIFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		A1ED62CA1BCCF4F900289592 /* LiveGIFs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveGIFs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1ED62CD1BCCF4F900289592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1ED62CF1BCCF4F900289592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		A1ED62D91BCCF4F900289592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1ED62E11BCCF56100289592 /* GIFication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFication.swift; sourceTree = "<group>"; };
 		A1ED62E41BCCFA4A00289592 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		AC0171701B98A21991B0794B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AD5C79F0F2577ED046F99811 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,16 +37,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8EE760D5134F3A7CA8EFAB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36FA80591C05CB70456918C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC0171701B98A21991B0794B /* Pods.debug.xcconfig */,
+				0BC0627F4991C9F7B9D2105E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		744F81C6A648D41AC6A61259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C79F0F2577ED046F99811 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1ED62C11BCCF4F800289592 = {
 			isa = PBXGroup;
 			children = (
 				A1ED62CC1BCCF4F900289592 /* Code */,
+				744F81C6A648D41AC6A61259 /* Frameworks */,
+				36FA80591C05CB70456918C6 /* Pods */,
 				A1ED62CB1BCCF4F900289592 /* Products */,
 				A1ED62DF1BCCF51000289592 /* Resources */,
 				A1ED62E01BCCF51500289592 /* Supporting Files */,
@@ -60,6 +86,7 @@
 			children = (
 				A1ED62CD1BCCF4F900289592 /* AppDelegate.swift */,
 				A1ED62E11BCCF56100289592 /* GIFication.swift */,
+				A1E69B681BCDB5420063000C /* GIFViewController.swift */,
 				A1ED62E41BCCFA4A00289592 /* ImageCell.swift */,
 				A1ED62CF1BCCF4F900289592 /* ViewController.swift */,
 			);
@@ -93,6 +120,7 @@
 				A1ED62C61BCCF4F800289592 /* Sources */,
 				A1ED62C71BCCF4F800289592 /* Frameworks */,
 				A1ED62C81BCCF4F800289592 /* Resources */,
+				6DB463CB3DA0BBDBD85512D8 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,11 +176,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DB463CB3DA0BBDBD85512D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1ED62C61BCCF4F800289592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E69B691BCDB5420063000C /* GIFViewController.swift in Sources */,
 				A1ED62E21BCCF56100289592 /* GIFication.swift in Sources */,
 				A1ED62E51BCCFA4A00289592 /* ImageCell.swift in Sources */,
 				A1ED62D01BCCF4F900289592 /* ViewController.swift in Sources */,
@@ -257,6 +304,7 @@
 		};
 		A1ED62DD1BCCF4F900289592 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0171701B98A21991B0794B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -271,6 +319,7 @@
 		};
 		A1ED62DE1BCCF4F900289592 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC0627F4991C9F7B9D2105E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
